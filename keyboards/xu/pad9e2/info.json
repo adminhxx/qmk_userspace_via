@@ -1,0 +1,82 @@
+{
+    "manufacturer": "XuSir",
+    "keyboard_name": "Xu Pad 9E2",
+    "maintainer": "XuSir",
+    "bootloader": "rp2040",
+    "encoder": {
+        "enabled": true,
+        "rotary": [
+            {"pin_a": "GP2", "pin_b": "GP1"},
+            {"pin_a": "GP4", "pin_b": "GP3"}
+        ]
+    },
+    "features": {
+        "bootmagic": true,
+        "encoder": true,
+        "extrakey": true,
+        "mousekey": true,
+        "rgb_matrix": true
+    },
+    "matrix_pins": {
+        "direct": [
+            ["GP5", "GP6", "GP29", "GP28", "GP27", "GP26", "GP15", "GP14", "GP13", "GP12", "GP11"]
+        ]
+    },
+    "name": "Xu Pad 9E2",
+    "processor": "RP2040",
+    "rgb_matrix": {
+        "animations": {
+            "breathing": true,
+            "cycle_all": true,
+            "digital_rain": true,
+            "pixel_rain": true,
+            "rainbow_beacon": true,
+            "raindrops": true,
+            "solid_reactive_nexus": true,
+            "solid_reactive_simple": true,
+            "solid_reactive_wide": true,
+            "splash": true,
+            "typing_heatmap": true
+        },
+        "driver": "ws2812",
+        "layout": [
+            {"matrix": [0, 2], "x": 0, "y": 0, "flags": 4},
+            {"matrix": [0, 3], "x": 112, "y": 0, "flags": 4},
+            {"matrix": [0, 4], "x": 224, "y": 0, "flags": 4},
+            {"matrix": [0, 5], "x": 64, "y": 64, "flags": 4},
+            {"matrix": [0, 6], "x": 112, "y": 64, "flags": 4},
+            {"matrix": [0, 7], "x": 224, "y": 64, "flags": 4},
+            {"matrix": [0, 8], "x": 64, "y": 112, "flags": 4},
+            {"matrix": [0, 9], "x": 112, "y": 112, "flags": 4},
+            {"matrix": [0, 10], "x": 224, "y": 112, "flags": 4}
+        ],
+        "max_brightness": 150
+    },
+    "url": "https://cobanstationery.com",
+    "usb": {
+        "device_version": "1.2.0",
+        "pid": "0x7875",
+        "vid": "0xCB3A"
+    },
+    "ws2812": {
+        "driver": "vendor",
+        "pin": "GP0"
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"label": "push_left", "matrix": [0, 0], "x": 0, "y": 0},
+                {"label": "push_right", "matrix": [0, 1], "x": 2, "y": 0},
+                {"label": "key_1", "matrix": [0, 2], "x": 0, "y": 1},
+                {"label": "key_2", "matrix": [0, 3], "x": 1, "y": 1},
+                {"label": "key_3", "matrix": [0, 4], "x": 2, "y": 1},
+                {"label": "key_4", "matrix": [0, 5], "x": 0, "y": 2},
+                {"label": "key_5", "matrix": [0, 6], "x": 1, "y": 2},
+                {"label": "key_6", "matrix": [0, 7], "x": 2, "y": 2},
+                {"label": "key_7", "matrix": [0, 8], "x": 0, "y": 3},
+                {"label": "key_8", "matrix": [0, 9], "x": 1, "y": 3},
+                {"label": "key_9", "matrix": [0, 10], "x": 2, "y": 3}
+            ]
+        }
+    }
+}
